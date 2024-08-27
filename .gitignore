@@ -1,1 +1,4 @@
+# Ignorar directorios de build en cualquier subdirectorio
 **/build/
+**/nbproject/private/
+**/nbproject/genfiles.properties
