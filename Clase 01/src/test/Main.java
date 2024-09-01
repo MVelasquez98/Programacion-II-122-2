@@ -5,6 +5,7 @@
 package test;
 
 import model.Auto;
+import model.Estudiante;
 
 /**
  *
@@ -16,17 +17,55 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Hola Mundo");
-        // Objeto : Instanciar una clase
-        Auto miAuto = new Auto("Fiat Cronos",2023,"AGDGDG");
-        //System.out.println(miAuto.nombre);        
-        System.out.println(miAuto.getNombre());
-        miAuto.setNombre("Fiat Palio");
-        System.out.println(miAuto.getNombre());
-        miAuto.acelerar(60.0);
-        System.out.println("El auto acelero a : "+ miAuto.getVelocidad()+"Km/h");
-        System.out.println(String.format("el nombre es: %s, el año es %d ", miAuto.getNombre(), miAuto.getAnio()));
+
+        // Declaración e inicialización aparte
+        int x;
+        x = 0;
+
+        //o todo junto
+        int y = 1;
+        char caracter = 'A';
+        double numeroConComa = 4.5;
+        boolean bandera = true;
+        String texto = "Hola Mundo";
+        int snake_case = 1;
+        int camelCase = 2;
+
+        //Estructuras condicionales
+        if (bandera) {
+            System.out.println("Es true");
+        } else {
+            System.out.println("Es true");
+        }
+
+        if (!bandera) {
+            System.out.println("Es true");
+        } else if (y % 2 == 0) {
+            System.out.println("Es true");
+        }
+
+        if (x < 2 && y > 0) {
+
+        }
+
+        // estructuras repetitivas
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(i);
+        }
+
+        int i = 6;
+        while (i <= 5) {
+            System.out.println(i);
+            i++;
+        }
+
+        do {
+            System.out.println(i);
+        } while (i <= 5);
+
+        Estudiante estudiante1 = new Estudiante("Matias", "Velasquez", 26, "PrograII", 10);
+        System.out.println(estudiante1);
+        estudiante1.mostraInformacion();
     }
-    
+
 }
