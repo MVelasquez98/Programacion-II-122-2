@@ -66,6 +66,11 @@ public class Main {
         Estudiante estudiante1 = new Estudiante("Matias", "Velasquez", 26, "PrograII", 10);
         System.out.println(estudiante1);
         estudiante1.mostraInformacion();
+        
+        
+        Auto auto = new Auto("Fiat",2023,"AG123");        
+        Auto auto1 = new Auto("Toyota",2024,"AG124");
+
     }
 
 }
